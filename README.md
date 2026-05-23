@@ -12,7 +12,8 @@ Repositório com walkthroughs de alertas investigados na plataforma [LetsDefend]
 |---|----------|--------|-----------|-----------|
 | 1 | SOC146 | [Phishing — Excel 4.0 Macro (XLM)](./alerts/SOC146-phishing-excel-macro-xlm.md) | Phishing / Malware | ✅ True Positive |
 | 2 | SOC165 | [Possible SQL Injection Payload Detected](./alerts/SOC165-SQL-Injection-Walkthrough.md) | Web Attack | ✅ True Positive |
-| 3 | SOC168 | [Whoami Command Detected in Request Body](./alerts/SOC168-Whoami-Command-Detected.md) | Web Attack / Command Injection | ✅ True Positive |
+| 3 | SOC167 | [LS Command Detected in Requested URL](./alerts/SOC167-LS-Command-Detected-in-URL.md) | Web Attack / Command Injection | ❌ False Positive |
+| 4 | SOC168 | [Whoami Command Detected in Request Body](./alerts/SOC168-Whoami-Command-Detected.md) | Web Attack / Command Injection | ✅ True Positive |
 
 ---
 
@@ -38,6 +39,7 @@ letsdefend-soc-walkthroughs/
 └── alerts/
     ├── SOC146-phishing-excel-macro-xlm.md
     ├── SOC165-SQL-Injection-Walkthrough.md
+    ├── SOC167-LS-Command-Detected-in-URL.md
     └── SOC168-Whoami-Command-Detected.md
 ```
 
@@ -45,4 +47,4 @@ letsdefend-soc-walkthroughs/
 
 ## 🔖 Tags
 
-`blue-team` `soc` `letsdefend` `cybersecurity` `sql-injection` `phishing` `command-injection` `incident-response`
+`blue-team` `soc` `letsdefend` `cybersecurity` `sql-injection` `phishing` `command-injection` `incident-response` `false-positive`
