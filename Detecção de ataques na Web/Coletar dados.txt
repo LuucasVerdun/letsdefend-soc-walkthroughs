@@ -1,0 +1,27 @@
+Coletar dados
+Reúna algumas informações que possam ser coletadas rapidamente para obter uma melhor compreensão do tráfego.
+Elas podem ser resumidas da seguinte forma.
+
+
+
+
+Propriedade dos endereços IP e dos dispositivos.
+Se o tráfego vier de fora (Internet);
+
+
+Propriedade do endereço IP (Endereço estático ou de pool? Quem é o proprietário? É um serviço de hospedagem web?)
+
+Reputação do endereço IP (Pesquisa no VirusTotal, AbuseIPDB, Cisco Talos)
+
+
+
+
+
+
+Se o tráfego vier da rede da empresa;
+
+Nome do host do dispositivo
+
+Quem é o proprietário do dispositivo (nome de usuário)?
+
+Última vez que o usuário fez login
