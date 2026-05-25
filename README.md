@@ -14,6 +14,7 @@ Repositório com walkthroughs de alertas investigados na plataforma [LetsDefend]
 | 2 | SOC165 | [Possible SQL Injection Payload Detected](./alerts/SOC165-SQL-Injection-Walkthrough.md) | Web Attack | ✅ True Positive |
 | 3 | SOC167 | [LS Command Detected in Requested URL](./alerts/SOC167-LS-Command-Detected-in-URL.md) | Web Attack / Command Injection | ❌ False Positive |
 | 4 | SOC168 | [Whoami Command Detected in Request Body](./alerts/SOC168-Whoami-Command-Detected.md) | Web Attack / Command Injection | ✅ True Positive |
+| 5 | SOC169 | [Possible IDOR Attack Detected](./alerts/SOC169-Possible-IDOR-Attack-Detected.md) | Web Attack / IDOR | ✅ True Positive |
 
 ---
 
@@ -40,11 +41,12 @@ letsdefend-soc-walkthroughs/
     ├── SOC146-phishing-excel-macro-xlm.md
     ├── SOC165-SQL-Injection-Walkthrough.md
     ├── SOC167-LS-Command-Detected-in-URL.md
-    └── SOC168-Whoami-Command-Detected.md
+    ├── SOC168-Whoami-Command-Detected.md
+    └── SOC169-Possible-IDOR-Attack-Detected.md
 ```
 
 ---
 
 ## 🔖 Tags
 
-`blue-team` `soc` `letsdefend` `cybersecurity` `sql-injection` `phishing` `command-injection` `incident-response` `false-positive`
+`blue-team` `soc` `letsdefend` `cybersecurity` `sql-injection` `phishing` `command-injection` `idor` `incident-response` `false-positive`
