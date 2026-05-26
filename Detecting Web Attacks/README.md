@@ -15,6 +15,7 @@ Repositório com walkthroughs de alertas investigados na plataforma [LetsDefend]
 | 3 | SOC167 | [LS Command Detected in Requested URL](./alerts/SOC167-LS-Command-Detected-in-URL.md) | Web Attack / Command Injection | ❌ False Positive |
 | 4 | SOC168 | [Whoami Command Detected in Request Body](./alerts/SOC168-Whoami-Command-Detected.md) | Web Attack / Command Injection | ✅ True Positive |
 | 5 | SOC169 | [Possible IDOR Attack Detected](./alerts/SOC169-Possible-IDOR-Attack-Detected.md) | Web Attack / IDOR | ✅ True Positive |
+| 6 | SOC170 | [Passwd Found in Requested URL — Possible LFI Attack](./alerts/SOC170-Passwd-Found-in-URL-Possible-LFI.md) | Web Attack / LFI | ✅ True Positive (não bem-sucedido) |
 
 ---
 
@@ -42,11 +43,12 @@ letsdefend-soc-walkthroughs/
     ├── SOC165-SQL-Injection-Walkthrough.md
     ├── SOC167-LS-Command-Detected-in-URL.md
     ├── SOC168-Whoami-Command-Detected.md
-    └── SOC169-Possible-IDOR-Attack-Detected.md
+    ├── SOC169-Possible-IDOR-Attack-Detected.md
+    └── SOC170-Passwd-Found-in-URL-Possible-LFI.md
 ```
 
 ---
 
 ## 🔖 Tags
 
-`blue-team` `soc` `letsdefend` `cybersecurity` `sql-injection` `phishing` `command-injection` `idor` `incident-response` `false-positive`
+`blue-team` `soc` `letsdefend` `cybersecurity` `sql-injection` `phishing` `command-injection` `idor` `lfi` `path-traversal` `incident-response` `false-positive`
