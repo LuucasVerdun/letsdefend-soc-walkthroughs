@@ -1,21 +1,31 @@
-# 🛡️ LetsDefend — SOC Walkthroughs
+# 🌐 Detecting Web Attacks — SOC Walkthroughs
 
-Repositório com walkthroughs de alertas investigados na plataforma [LetsDefend](https://app.letsdefend.io/), simulando o ambiente de um Security Operations Center (SOC).
+Walkthroughs de alertas de **ataques web** investigados na plataforma [LetsDefend](https://app.letsdefend.io/), simulando o ambiente de um Security Operations Center (SOC).
 
-> 📌 Objetivo: documentar investigações práticas para fins de estudo e portfólio em Cibersegurança — Blue Team.
+> 📌 Foco: identificar, analisar e responder a ataques direcionados a aplicações e servidores web — SQL Injection, Command Injection, LFI, IDOR e similares.
 
 ---
 
 ## 📋 Alertas Resolvidos
 
-| # | Event ID | Alerta | Categoria | Resultado |
-|---|----------|--------|-----------|-----------|
-| 1 | SOC146 | [Phishing — Excel 4.0 Macro (XLM)](./alerts/SOC146-phishing-excel-macro-xlm.md) | Phishing / Malware | ✅ True Positive |
-| 2 | SOC165 | [Possible SQL Injection Payload Detected](./alerts/SOC165-SQL-Injection-Walkthrough.md) | Web Attack | ✅ True Positive |
-| 3 | SOC167 | [LS Command Detected in Requested URL](./alerts/SOC167-LS-Command-Detected-in-URL.md) | Web Attack / Command Injection | ❌ False Positive |
-| 4 | SOC168 | [Whoami Command Detected in Request Body](./alerts/SOC168-Whoami-Command-Detected.md) | Web Attack / Command Injection | ✅ True Positive |
-| 5 | SOC169 | [Possible IDOR Attack Detected](./alerts/SOC169-Possible-IDOR-Attack-Detected.md) | Web Attack / IDOR | ✅ True Positive |
-| 6 | SOC170 | [Passwd Found in Requested URL — Possible LFI Attack](./alerts/SOC170-Passwd-Found-in-URL-Possible-LFI.md) | Web Attack / LFI | ✅ True Positive (não bem-sucedido) |
+| # | Event ID | Alerta | Tipo de Ataque | Resultado |
+|---|----------|--------|----------------|-----------|
+| 1 | SOC165 | [Possible SQL Injection Payload Detected](./alerts/SOC165-SQL-Injection-Walkthrough.md) | SQL Injection | ✅ True Positive |
+| 2 | SOC167 | [LS Command Detected in Requested URL](./alerts/SOC167-LS-Command-Detected-in-URL.md) | Command Injection | ❌ False Positive |
+| 3 | SOC168 | [Whoami Command Detected in Request Body](./alerts/SOC168-Whoami-Command-Detected.md) | Command Injection | ✅ True Positive |
+| 4 | SOC169 | [Possible IDOR Attack Detected](./alerts/SOC169-Possible-IDOR-Attack-Detected.md) | IDOR | ✅ True Positive |
+| 5 | SOC170 | [Passwd Found in Requested URL — Possible LFI Attack](./alerts/SOC170-Passwd-Found-in-URL-Possible-LFI.md) | LFI / Path Traversal | ✅ True Positive (não bem-sucedido) |
+
+---
+
+## 🧠 Tipos de Ataque Cobertos
+
+| Ataque | Descrição |
+|---|---|
+| **SQL Injection** | Inserção de código SQL malicioso em campos de entrada para manipular o banco de dados |
+| **Command Injection** | Execução de comandos do sistema operacional via parâmetros vulneráveis da aplicação |
+| **IDOR** | Manipulação de identificadores para acessar recursos de outros usuários sem autorização |
+| **LFI / Path Traversal** | Navegação por diretórios do servidor para acessar arquivos locais sensíveis |
 
 ---
 
@@ -23,23 +33,22 @@ Repositório com walkthroughs de alertas investigados na plataforma [LetsDefend]
 
 | Ferramenta | Uso |
 |---|---|
-| [VirusTotal](https://www.virustotal.com/) | Análise de IPs, URLs e arquivos maliciosos |
+| [VirusTotal](https://www.virustotal.com/) | Análise de IPs e URLs maliciosas |
 | [AbuseIPDB](https://www.abuseipdb.com/) | Reputação de endereços IP |
 | [Cisco Talos](https://talosintelligence.com/) | Inteligência de ameaças e reputação de IPs |
-| [URLDecoder](https://www.urldecoder.org/) | Decodificação de URLs suspeitas |
+| [URLDecoder](https://www.urldecoder.org/) | Decodificação de URLs suspeitas com encoding |
 | [LetsDefend](https://app.letsdefend.io/) | Plataforma SOC simulada |
 
 ---
 
-## 📁 Estrutura do Repositório
+## 📁 Estrutura
 
 ```
-letsdefend-soc-walkthroughs/
+Detecting Web Attacks/
 │
 ├── README.md
 │
 └── alerts/
-    ├── SOC146-phishing-excel-macro-xlm.md
     ├── SOC165-SQL-Injection-Walkthrough.md
     ├── SOC167-LS-Command-Detected-in-URL.md
     ├── SOC168-Whoami-Command-Detected.md
@@ -51,4 +60,4 @@ letsdefend-soc-walkthroughs/
 
 ## 🔖 Tags
 
-`blue-team` `soc` `letsdefend` `cybersecurity` `sql-injection` `phishing` `command-injection` `idor` `lfi` `path-traversal` `incident-response` `false-positive`
+`web-attacks` `sql-injection` `command-injection` `idor` `lfi` `path-traversal` `blue-team` `soc` `letsdefend`
